@@ -1,6 +1,1 @@
-{
-  "previewPort": 3000,
-  "healthPath": "/",
-  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
-  "secrets": []
-}
+{"previewPort": 3000, "healthPath": "/", "startCommand": "docker compose -f docker-compose.base44.yml up -d", "secrets": [{"name": "AIRTABLE_PERSONAL_ACCESS_TOKEN", "description": "Personal Access Token de Airtable (https://airtable.com/create/tokens)", "requiredAtBoot": true, "generatedForDevelopment": true}, {"name": "AIRTABLE_BASE_ID", "description": "ID de la base de Airtable (se encuentra en la URL de tu base: airtable.com/<baseId>)", "requiredAtBoot": true, "generatedForDevelopment": true}, {"name": "JWT_SECRET", "description": "Clave secreta para firmar tokens JWT de autenticación", "requiredAtBoot": true, "generatedForDevelopment": true}]}

@@ -496,6 +496,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
 
     <div class="hero-btns">
       <button class="btn-main" onclick="show('s-avatar')">🛡️ Quiero ser Guardián del Voto</button>
+      <button class="btn-outline" onclick="show('s-login')">🔑 Ya soy Guardián — Iniciar sesión</button>
       <button class="btn-outline" onclick="show('s-partidos')">🏛️ Conoce los partidos: PAN · PRI</button>
       <button class="btn-outline" onclick="show('s-info')">ℹ️ ¿En qué consiste? Ver más</button>
     </div>
@@ -777,6 +778,51 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
   </div>
   <div class="screen-footer">
     <button class="btn-main" onclick="show('s-avatar')">🛡️ Quiero ser Guardián →</button>
+  </div>
+</section>
+
+<!-- ══════════════ S7 LOGIN ══════════════ -->
+<section class="screen" id="s-login">
+  <div class="screen-header">
+    <button class="back-btn" onclick="show('s-hero')">←</button>
+    <div><div class="screen-title">Iniciar Sesión</div><div class="screen-sub">Guardianes del Voto</div></div>
+  </div>
+  <div class="form-scroll" style="display:flex;flex-direction:column;justify-content:center;padding:2rem 1.5rem;">
+    <div style="text-align:center;margin-bottom:1.5rem;">
+      <div style="font-size:3rem;margin-bottom:.5rem;">🛡️</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">ACCESO GUARDIÁN</div>
+      <p style="font-size:.82rem;color:var(--txt2);margin-top:.4rem;">Ingresa con tu correo y contraseña</p>
+    </div>
+    <div class="field"><label>Correo electrónico</label><input type="email" id="login-email" placeholder="tu@correo.com" inputmode="email"/></div>
+    <div class="field"><label>Contraseña</label><input type="password" id="login-pass" placeholder="••••••••" enterkeyhint="done"/></div>
+    <div id="login-error" style="color:#ff8080;font-size:.8rem;margin-bottom:.5rem;display:none;"></div>
+    <button class="btn-main" onclick="doLogin()">🔓 Ingresar</button>
+  </div>
+</section>
+
+<!-- ══════════════ S7b MI PANEL ══════════════ -->
+<section class="screen" id="s-mipanel">
+  <div class="screen-header">
+    <button class="back-btn" onclick="logout()">←</button>
+    <div><div class="screen-title">Mi Panel</div><div class="screen-sub" id="mp-name">Guardián</div></div>
+  </div>
+  <div class="admin-scroll">
+    <div class="admin-section">
+      <div class="admin-sec-title">📋 Mis datos</div>
+      <div id="mp-info" style="font-size:.85rem;line-height:1.8;color:var(--txt2);"></div>
+    </div>
+    <div class="admin-section">
+      <div class="admin-sec-title">📝 Enviar reporte</div>
+      <div class="field"><label>Describe tu reporte de casilla</label>
+        <textarea id="rp-contenido" rows="4" style="width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);border-radius:12px;padding:.8rem .9rem;color:var(--txt);font-family:'Inter';font-size:.9rem;resize:none;" placeholder="Ej: Llegué a la casilla 1234, todo en orden..."></textarea>
+      </div>
+      <button class="btn-main" onclick="enviarReporte()" style="margin-top:.5rem;">📤 Enviar reporte</button>
+      <div id="rp-msg" style="font-size:.8rem;margin-top:.5rem;display:none;"></div>
+    </div>
+    <div class="admin-section" id="mp-admin-link" style="display:none;">
+      <div class="admin-sec-title">⚙️ Panel Admin</div>
+      <button class="btn-main" onclick="show('s-admin')">Acceder al panel de administración</button>
+    </div>
   </div>
 </section>
 

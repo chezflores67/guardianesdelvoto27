@@ -1,0 +1,1 @@
+{"name": "guardianes-del-voto", "version": "1.0.0", "type": "module", "scripts": {"start": "node server.js", "dev": "node --watch server.js"}, "dependencies": {"bcryptjs": "^2.4.3", "express": "^4.21.0", "jsonwebtoken": "^9.0.2"}}
