@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="theme-color" content="#0e0b1e">
 <title>Guardianes del Voto · Chihuahua 2027</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --p1:#FF3CAC;--p2:#784BA0;--p3:#2B86C5;
-  --g1:#00F5A0;--g2:#00D9F5;
-  --y:#FFD93D;--r:#FF6B6B;
-  --bg:#0a0a0a;--card:rgba(255,255,255,.06);--card2:rgba(255,255,255,.1);
-  --txt:#fff;--txt2:rgba(255,255,255,.6);--r:16px;
+  --p1:#FF006E;--p2:#8338EC;--p3:#3A86FF;
+  --g1:#06FFA5;--g2:#00E5FF;
+  --y:#FFBE0B;--r:#FF4D6D;
+  --bg:#0e0b1e;--card:rgba(255,255,255,.07);--card2:rgba(255,255,255,.12);
+  --txt:#fff;--txt2:rgba(255,255,255,.65);--r:16px;
   --grad:linear-gradient(135deg,var(--p1),var(--p2),var(--p3));
   --grad2:linear-gradient(135deg,var(--g1),var(--g2));
 }
@@ -33,16 +33,16 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
 
 /* ══════════════ HERO ══════════════ */
 #s-hero{
-  background:#0a0a0a;
+  background:#0e0b1e;
   overflow-y:auto;-webkit-overflow-scrolling:touch;
   position:relative;
 }
 .hero-bg{
   position:absolute;inset:0;z-index:0;
   background:
-    radial-gradient(ellipse 80% 60% at 10% 0%,rgba(255,60,172,.22) 0%,transparent 60%),
-    radial-gradient(ellipse 60% 50% at 90% 20%,rgba(43,134,197,.2) 0%,transparent 60%),
-    radial-gradient(ellipse 50% 40% at 50% 90%,rgba(0,245,160,.12) 0%,transparent 60%);
+    radial-gradient(ellipse 80% 60% at 10% 0%,rgba(255,0,110,.2) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 20%,rgba(58,134,255,.18) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 40% at 50% 90%,rgba(131,56,236,.14) 0%,transparent 60%);
 }
 /* grid de puntos */
 .hero-bg::after{
@@ -94,8 +94,8 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
 }
 .hero-img-overlay{
   position:absolute;inset:0;
-  background:linear-gradient(to right, rgba(10,10,10,.7) 0%, transparent 60%),
-             linear-gradient(to top, rgba(10,10,10,.8) 0%, transparent 50%);
+  background:linear-gradient(to right, rgba(14,11,30,.7) 0%, transparent 60%),
+             linear-gradient(to top, rgba(14,11,30,.8) 0%, transparent 50%);
 }
 .hero-img-label{
   position:absolute;bottom:.75rem;left:.9rem;
@@ -195,7 +195,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
 
 /* ══════════════ HEADER / FOOTER ══════════════ */
 .screen-header{
-  background:rgba(10,10,10,.95);backdrop-filter:blur(12px);
+  background:rgba(14,11,30,.95);backdrop-filter:blur(12px);
   padding:.8rem 1.1rem;border-bottom:1px solid rgba(255,255,255,.07);
   display:flex;align-items:center;gap:.75rem;flex-shrink:0;
 }
@@ -208,7 +208,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
 .screen-sub{font-size:.68rem;color:var(--txt2);font-weight:500;}
 .screen-footer{
   padding:.85rem 1.1rem;
-  background:rgba(10,10,10,.95);backdrop-filter:blur(12px);
+  background:rgba(14,11,30,.95);backdrop-filter:blur(12px);
   border-top:1px solid rgba(255,255,255,.07);flex-shrink:0;
 }
 
@@ -251,7 +251,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
 /* ══════════════ FORM ══════════════ */
 #s-form{background:var(--bg);}
 .prog-wrap{
-  background:rgba(10,10,10,.95);backdrop-filter:blur(12px);
+  background:rgba(14,11,30,.95);backdrop-filter:blur(12px);
   border-bottom:1px solid rgba(255,255,255,.07);
   padding:.55rem 1.1rem .65rem;flex-shrink:0;
 }
@@ -290,7 +290,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
   backdrop-filter:blur(8px);
 }
 .field input:focus,.field select:focus{border-color:var(--p1);background:rgba(255,60,172,.08);}
-.field select option{background:#1a1a1a;}
+.field select option{background:#1a1a2e;}
 .field-note{font-size:.7rem;margin-top:.3rem;}
 
 /* chips */
@@ -429,7 +429,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);height
 /* ══════════════ PIE SMARTAPPS ══════════════ */
 .smart-footer{
   position:fixed;bottom:0;left:0;right:0;z-index:50;
-  background:rgba(10,10,10,.92);
+  background:rgba(14,11,30,.92);
   backdrop-filter:blur(16px);
   border-top:1px solid rgba(255,255,255,.07);
   padding:.6rem 1.1rem;
@@ -1074,7 +1074,7 @@ function nuevoGuardian() {
 // ═══════════════════════════════════════
 //  ADMIN
 // ═══════════════════════════════════════
-const ADMIN_PASS = 'guardianes2027'; // ← Cambia esta contraseña
+const ADMIN_PASS = '6902'; // ← Cambia esta contraseña
 
 function adminLogin() {
   const pwd = document.getElementById('admin-pwd').value;
